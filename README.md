@@ -79,8 +79,16 @@ python app.py
 
 If you wish to build an executable file for distribution, you can use **PyInstaller**:
 
+you can install PyInstaller using pip:
+
+```
+pip install --force-reinstall --no-binary :all: pyinstaller
+```
+
+Then, run the following command:
+
 ```bash
-pyinstaller --onefile --windowed app.py
+pyinstaller --noconfirm --onefile --windowed --icon=assets\app_logo.ico --add-data "assets;assets" --add-data ".env;." --hidden-import "keyring.backends.Windows" --collect-all "keyring" --exclude-module "tkinter" --exclude-module "test" --name "EasyGitSwitcher" app.py
 ```
 
 This will create a standalone executable in the `dist` directory.

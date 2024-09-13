@@ -205,8 +205,8 @@ class GitHubProfileManager(QWidget):
         self.update_profile_list()
 
     def init_ui(self) -> None:
-        self.setWindowTitle("GitHub Profile Manager")
-        self.setWindowIcon(QIcon('assets/app_logo.png'))  # Set your application logo here
+        self.setWindowTitle("Easy Git Switcher")
+        self.setWindowIcon(QIcon('assets/app_logo.ico'))  # Set your application logo here
 
         # Apply dark mode and GitHub Desktop styling
         self.setStyleSheet("""
@@ -333,7 +333,6 @@ class GitHubProfileManager(QWidget):
                         
             # Load profiles from git credential fill
             git_profile = self.get_git_credentials()
-            print("git_profile", git_profile)
             
             # Merge profiles
             self.merge_profiles(keyring_profiles, git_profile)
