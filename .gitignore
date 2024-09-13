@@ -1,0 +1,31 @@
+# env files
+.env
+
+# mypy cache
+.mypy_cache/
+
+# pycache
+__pycache__/
+
+# vscode
+.vscode/
+
+# python bytecode
+*.pyc
+
+# python env
+venv/
+
+# logs
+logs/
+
+# data
+data/
+
+dist/
+
+# build
+build/
+
+# .spec file
+*.spec

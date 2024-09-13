@@ -1,0 +1,5 @@
+PyQt5==5.15.11
+keyring==23.0.1
+python-dotenv==1.0.1
+pyinstaller==4.7
+
